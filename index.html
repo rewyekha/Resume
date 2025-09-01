@@ -1,48 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Reyas Khan - Resume</title>
   <style>
+    /* ---------- Base Reset ---------- */
+    *, *::before, *::after { box-sizing: border-box; }
+    html, body { height: 100%; }
     body {
       margin: 0;
       font-family: "Segoe UI", Arial, sans-serif;
-      color: #fff;
-      line-height: 1.6;
+      color: #e6f1ff;
+      line-height: 1.65;
+      overflow-x: hidden;
+      position: relative; /* allows layering with Vanta canvas */
     }
 
+    /* ---------- Legibility Overlay above Vanta ---------- */
+    .vanta-dim-overlay {
+      position: fixed;
+      inset: 0;
+      background: radial-gradient(1200px 800px at 20% 0%, rgba(5,10,25,0.65), rgba(5,10,25,0.85)),
+                  linear-gradient(180deg, rgba(6,12,28,0.75) 0%, rgba(6,12,28,0.9) 100%);
+      pointer-events: none;
+      z-index: 1; /* above Vanta canvas */
+    }
+
+    /* ---------- Page Header ---------- */
+    .page-header {
+      position: relative;
+      z-index: 2; /* above overlay/Vanta */
+      text-align: center;
+      padding: 48px 16px 8px;
+    }
+    .page-header h1 {
+      margin: 0;
+      font-size: clamp(34px, 6vw, 56px); /* larger, responsive */
+      font-weight: 800;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #ffffff;
+      text-shadow:
+        0 2px 24px rgba(30,144,255,0.2),
+        0 0 1px rgba(100,255,218,0.5);
+    }
+    .page-header .subtitle {
+      margin-top: 8px;
+      color: #a8b2d1;
+      font-size: 14px;
+    }
+
+    /* ---------- Resume Card (3D Glass) ---------- */
     .resume-card {
-      background: rgba(255,255,255,0.08);
-      padding: 30px;
-      margin: 50px auto;
-      width: 80%;
-      max-width: 900px;
-      border-radius: 15px;
+      position: relative;
+      z-index: 2; /* above overlay/Vanta */
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(100,255,218,0.18);
+      padding: 28px;
+      margin: 28px auto 56px;
+      width: min(90%, 980px);
+      border-radius: 16px;
       backdrop-filter: blur(10px);
-      box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.35), inset 0 1px 0 rgba(255,255,255,0.05);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      will-change: transform;
+    }
+    .resume-card:hover {
+      transform: translateY(-6px) rotateX(2deg) rotateY(2deg);
+      box-shadow: 0 30px 60px rgba(0,0,0,0.45);
     }
 
+    /* ---------- Typography ---------- */
     h1, h2, h3 {
-      color: #fff;
-      text-shadow: 0 0 10px #1e90ff, 0 0 20px #1e90ff;
+      color: #ffffff;
+      text-shadow: 0 0 10px rgba(100,255,218,0.15);
+      margin-top: 12px;
+      margin-bottom: 10px;
     }
+    h2 {
+      font-size: 22px;
+      border-bottom: 1px solid rgba(100,255,218,0.18);
+      padding-bottom: 8px;
+      margin-top: 22px;
+    }
+    h3 { font-size: 18px; margin-top: 16px; }
 
+    p { margin: 8px 0 10px; color: #dbe6ff; }
+    ul { padding-left: 18px; margin: 8px 0 10px; }
+    li { margin: 6px 0; }
+
+    /* ---------- Links ---------- */
     a {
-      color: #00ffff;
+      color: #64ffda;
       text-decoration: none;
+      border-bottom: 1px dashed rgba(100,255,218,0.4);
+      transition: color 0.2s ease, border-color 0.2s ease;
     }
-
     a:hover {
-      text-decoration: underline;
+      color: #aafce9;
+      border-color: rgba(100,255,218,0.7);
     }
 
-    ul {
-      padding-left: 20px;
+    /* ---------- Utility Row (Top actions) ---------- */
+    .actions {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 8px;
+    }
+    .btn {
+      appearance: none;
+      border: 1px solid rgba(100,255,218,0.35);
+      background: rgba(10,25,47,0.4);
+      color: #e6f1ff;
+      padding: 10px 14px;
+      border-radius: 10px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+      box-shadow: 0 8px 18px rgba(0,0,0,0.25);
+      backdrop-filter: blur(6px);
+    }
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 14px 28px rgba(0,0,0,0.35);
+      background: rgba(10,25,47,0.55);
+    }
+
+    /* ---------- Print-friendly ---------- */
+    @media print {
+      body { background: #fff !important; color: #000; }
+      .vanta-dim-overlay { display: none !important; }
+      .page-header, .actions { text-shadow: none; color: #000; }
+      .resume-card {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        background: #fff;
+        color: #000;
+        border: none;
+        box-shadow: none;
+      }
+      a { color: #000; border: none; text-decoration: underline; }
     }
   </style>
 </head>
 <body>
+  <!-- Soft dark overlay to make text more legible over Vanta -->
+  <div class="vanta-dim-overlay"></div>
+
+  <div class="page-header">
+    <h1>REYAS KHAN</h1>
+    <div class="subtitle">Software Engineer - Cloud & DevOps • AWS • Databases • CI/CD</div>
+  </div>
+
+  <div class="actions">
+    <button class="btn" onclick="window.print()">Print / Save as PDF</button>
+  </div>
+
   <div class="resume-card">
     <h1>Reyas Khan M</h1>
     <p><b>Location:</b> Chennai, Tamil Nadu, India – 600100</p>
@@ -89,9 +207,9 @@
 
     <h2>Education</h2>
     <ul>
-      <li><b>MCA, Master of Computer Applications</b> – University of Madras – *Expected 2025*</li>
-      <li><b>CS50x Computer Science</b> – Harvard University – *2024*</li>
-      <li><b>Bachelor of Commerce</b> – Mohamed Sathak College of Arts and Science – *2017–2020 (CGPA: 7)*</li>
+      <li><b>MCA, Master of Computer Applications</b> – University of Madras – <i>Expected 2025</i></li>
+      <li><b>CS50x Computer Science</b> – Harvard University – <i>2024</i></li>
+      <li><b>Bachelor of Commerce</b> – Mohamed Sathak College of Arts and Science – <i>2017–2020 (CGPA: 7)</i></li>
     </ul>
 
     <h2>Events</h2>
@@ -138,33 +256,41 @@
 
     <h2>Declaration</h2>
     <p>I hereby declare that the information provided above is true and accurate to the best of my knowledge and belief.</p>
-    <p><b>Reyas Khan</b><br>Chennai</p>
+    <p><b>Reyas Khan</b><br/>Chennai</p>
   </div>
 
   <!-- Background Effect -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.waves.min.js"></script>
   <script>
-    VANTA.WAVES({
+    // Attach Vanta to body (stays behind everything)
+    const v = VANTA.WAVES({
       el: "body",
       mouseControls: true,
       touchControls: true,
-      color: 0x1e90ff,
-      waveHeight: 20,
-      waveSpeed: 1.0,
-      zoom: 0.85
-    })
+      // darken the wave color to reduce brightness
+      color: 0x0b1530,         // deep navy
+      shininess: 20,
+      waveHeight: 16,
+      waveSpeed: 0.85,
+      zoom: 0.9
+    });
   </script>
 
   <!-- Tilt Effect -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"></script>
   <script>
     VanillaTilt.init(document.querySelectorAll(".resume-card"), {
-      max: 25,
-      speed: 400,
+      max: 10,
+      speed: 500,
       glare: true,
-      "max-glare": 0.4
+      "max-glare": 0.15,
+      perspective: 900
     });
   </script>
+
+   <footer>
+    © 2025 Reyas Khan | Built with ❤️ on GitHub Pages
+  </footer>
 </body>
 </html>
