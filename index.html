@@ -4,6 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Reyas Khan - Resume</title>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.waves.min.js"></script>
+
   <style>
     /* ---------- Base Reset ---------- */
     *, *::before, *::after { box-sizing: border-box; }
@@ -146,151 +150,170 @@
       }
       a { color: #000; border: none; text-decoration: underline; }
     }
+    
+    /* ---------- CSS for Vanta Background ---------- */
+    #vanta-bg {
+      width: 100%;
+      min-height: 100vh;
+      position: fixed; /* Fix the background */
+      top: 0;
+      left: 0;
+      z-index: 0; 
+    }
+
+    .content {
+      position: relative;
+      z-index: 1;
+      padding: 40px;
+    }
+    
   </style>
 </head>
 <body>
-  <!-- Soft dark overlay to make text more legible over Vanta -->
-  <div class="vanta-dim-overlay"></div>
+  <div id="vanta-bg"></div>
 
-  <div class="page-header">
-    <h1>REYAS KHAN</h1>
-    <div class="subtitle">Software Engineer - Cloud & DevOps • AWS • Databases • CI/CD</div>
+  <div class="content">
+    <div class="vanta-dim-overlay"></div>
+
+    <div class="page-header">
+      <h1>REYAS KHAN</h1>
+      <div class="subtitle">Software Engineer - Cloud & DevOps • AWS • Databases • CI/CD</div>
+    </div>
+
+    <div class="actions">
+      <button class="btn" onclick="window.print()">Print / Save as PDF</button>
+    </div>
+
+    <div class="resume-card">
+      <h1>Reyas Khan M</h1>
+      <p><b>Location:</b> Chennai, Tamil Nadu, India – 600100</p>
+      <p><b>Email:</b> <a href="mailto:reyaskhan001@gmail.com">reyaskhan001@gmail.com</a></p>
+      <p><b>Portfolio:</b> <a href="https://rewyekha.github.io/#/contact">Portfolio</a></p>
+
+      <h2>About Me</h2>
+      <p>I am a dedicated software engineer with a focus on DevOps, Cloud and Database. I enjoy tackling complex problems and continuously improving my skills. With experience in both research and DevOps, I am keen to contribute to innovative projects and further enhance my professional journey.</p>
+
+      <h2>Skills</h2>
+      <ul>
+        <li><b>Programming Languages/Databases:</b> C, C++, Python, Java, HTML, CSS, JavaScript, SQL</li>
+        <li><b>Libraries and Frameworks:</b> Flask, ReactJS, Node.js</li>
+        <li><b>Operating Systems:</b> Windows, Linux (UNIX, RHEL, Ubuntu, Debian)</li>
+        <li><b>Cloud:</b> AWS, Microsoft Azure</li>
+        <li><b>Technologies & Methodologies:</b> Networking, DevOps, ITIL, Git, GitHub, CI/CD, ServiceNow, Docker, Kubernetes, Apache Kafka, Jenkins, IaaS, SaaS, IaC</li>
+        <li><b>Soft Skills:</b> Communication, Team Player, Time Management, Coding, Team Management, Attention to Detail</li>
+      </ul>
+
+      <h2>Experience</h2>
+      <h3>Associate Research | Sutherland Global Services, Chennai, India</h3>
+      <p><i>March 2022 – Present</i></p>
+      <ul>
+        <li>Developed intricate Hubble Sagan (SQL Server) queries for extracting product and customer engagement data.</li>
+        <li>Created and deployed technical content pages using XML...</li>
+        <li>Merging AI tools to support the publishing of technical support pages.</li>
+        <li>Wrote test cases, tracked bugs, and tested various backend tools of an e-commerce application.</li>
+        <li>Utilized client tools such as AWS, S3 buckets, SQL Server, SS portal...</li>
+        <li>Investigated and recommended automation solutions, reducing order full end time by 20%.</li>
+        <li>Identified training needs and provided coaching for new joiners.</li>
+        <li>Guided the development of an adaptive systems framework, increasing team efficiency by 25%.</li>
+        <li>Managed project risks by identifying, quantifying, and monitoring potential threats.</li>
+      </ul>
+
+      <h3>DevOps Engineer (Internship) | Besant Technologies, Chennai, India</h3>
+      <p><i>August 2020 – March 2021</i></p>
+      <ul>
+        <li>Contributed to internal automation and build configuration management.</li>
+        <li>Tracked system logs with Prometheus, reducing downtime by 23%.</li>
+        <li>Assisted in performance optimization with Kubernetes, achieving 121% peak times scalability.</li>
+        <li>Proposed CloudFormation-based infrastructure, improving system reliability by 33%.</li>
+        <li>Monitored the health of EC2 instances and other AWS services, ensuring system standards compliance.</li>
+      </ul>
+
+      <h2>Education</h2>
+      <ul>
+        <li><b>MCA, Master of Computer Applications</b> – University of Madras – <i>Expected 2025</i></li>
+        <li><b>CS50x Computer Science</b> – Harvard University – <i>2024</i></li>
+        <li><b>Bachelor of Commerce</b> – Mohamed Sathak College of Arts and Science – <i>2017–2020 (CGPA: 7)</i></li>
+      </ul>
+
+      <h2>Events</h2>
+      <ul>
+        <li>AWS AI Conclave – Amazon AWS, January 2024</li>
+        <li>World’s Biggest Virtual Software Testing Conference – Testflix, September 2023</li>
+        <li>AWS Innovate Modern Applications Edition – Amazon, October 2023</li>
+        <li>GitHub CI/CD – GitHub, 2022</li>
+      </ul>
+
+      <h2>Projects / Open Source</h2>
+      <ul>
+        <li><b>Master Portfolio Website</b> – <a href="https://rewyekha.github.io/#/">Live</a> | <a href="https://github.com/rewyekha/Masterfolio.git">Source Code</a></li>
+        <li><b>DevOps Mastery on AWS</b> – Documentation | Gitbook | Blog</li>
+        <li><b>Cloud-Native Monitoring Application</b> – Public | Source Code</li>
+        <li><b>Full Stack - CI/CD DevOps</b> – Virtual Browser | Source Code</li>
+        <li><b>Java Application with Docker & Kubernetes</b> – Source Code</li>
+        <li><b>OTP Authentication</b> – Source Code</li>
+      </ul>
+
+      <h2>Certifications</h2>
+      <ul>
+        <li>Microsoft Certified Azure Administrator Associate (AZ-104)</li>
+        <li>AWS Certified - Well-Architected Proficient</li>
+        <li>GitHub Fundamentals - Administration</li>
+        <li>Continuous Integration with GitHub Actions</li>
+        <li>Web Development with HTML and CSS – Microsoft</li>
+        <li>HackerRank Certified SQL (Advanced)</li>
+        <li>Networking – Cisco Networking Academy</li>
+        <li>Python Essentials – Cisco Networking Academy</li>
+        <li>GitHub Actions CI/CD – LinkedIn Learning</li>
+        <li>Oracle - Databases for Developers: Foundations</li>
+        <li>HackerRank Certifications & Badges</li>
+        <li>Microsoft Badges</li>
+      </ul>
+
+      <h2>Contact</h2>
+      <ul>
+        <li><b>Email:</b> <a href="mailto:reyaskhan001@gmail.com">reyaskhan001@gmail.com</a></li>
+        <li><b>LinkedIn:</b> <a href="https://www.linkedin.com/in/reyas-khan-16640825b/">LinkedIn</a></li>
+        <li><b>GitHub:</b> <a href="https://github.com/rewyekha">github.com/rewyekha</a></li>
+        <li><b>Portfolio:</b> <a href="https://rewyekha.github.io/#/contact">Portfolio</a></li>
+      </ul>
+
+      <h2>Declaration</h2>
+      <p>I hereby declare that the information provided above is true and accurate to the best of my knowledge and belief.</p>
+      <p><b>Reyas Khan</b><br/>Chennai</p>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"></script>
+    <script>
+      VanillaTilt.init(document.querySelectorAll(".resume-card"), {
+        max: 10,
+        speed: 500,
+        glare: true,
+        "max-glare": 0.15,
+        perspective: 900
+      });
+    </script>
+
+    <footer>
+      © 2025 Reyas Khan | Built with ❤️ on GitHub Pages
+    </footer>
   </div>
 
-  <div class="actions">
-    <button class="btn" onclick="window.print()">Print / Save as PDF</button>
-  </div>
-
-  <div class="resume-card">
-    <h1>Reyas Khan M</h1>
-    <p><b>Location:</b> Chennai, Tamil Nadu, India – 600100</p>
-    <p><b>Email:</b> <a href="mailto:reyaskhan001@gmail.com">reyaskhan001@gmail.com</a></p>
-    <p><b>Portfolio:</b> <a href="https://rewyekha.github.io/#/contact">Portfolio</a></p>
-
-    <h2>About Me</h2>
-    <p>I am a dedicated software engineer with a focus on DevOps, Cloud and Database. I enjoy tackling complex problems and continuously improving my skills. With experience in both research and DevOps, I am keen to contribute to innovative projects and further enhance my professional journey.</p>
-
-    <h2>Skills</h2>
-    <ul>
-      <li><b>Programming Languages/Databases:</b> C, C++, Python, Java, HTML, CSS, JavaScript, SQL</li>
-      <li><b>Libraries and Frameworks:</b> Flask, ReactJS, Node.js</li>
-      <li><b>Operating Systems:</b> Windows, Linux (UNIX, RHEL, Ubuntu, Debian)</li>
-      <li><b>Cloud:</b> AWS, Microsoft Azure</li>
-      <li><b>Technologies & Methodologies:</b> Networking, DevOps, ITIL, Git, GitHub, CI/CD, ServiceNow, Docker, Kubernetes, Apache Kafka, Jenkins, IaaS, SaaS, IaC</li>
-      <li><b>Soft Skills:</b> Communication, Team Player, Time Management, Coding, Team Management, Attention to Detail</li>
-    </ul>
-
-    <h2>Experience</h2>
-    <h3>Associate Research | Sutherland Global Services, Chennai, India</h3>
-    <p><i>March 2022 – Present</i></p>
-    <ul>
-      <li>Developed intricate Hubble Sagan (SQL Server) queries for extracting product and customer engagement data.</li>
-      <li>Created and deployed technical content pages using XML...</li>
-      <li>Merging AI tools to support the publishing of technical support pages.</li>
-      <li>Wrote test cases, tracked bugs, and tested various backend tools of an e-commerce application.</li>
-      <li>Utilized client tools such as AWS, S3 buckets, SQL Server, SS portal...</li>
-      <li>Investigated and recommended automation solutions, reducing order full end time by 20%.</li>
-      <li>Identified training needs and provided coaching for new joiners.</li>
-      <li>Guided the development of an adaptive systems framework, increasing team efficiency by 25%.</li>
-      <li>Managed project risks by identifying, quantifying, and monitoring potential threats.</li>
-    </ul>
-
-    <h3>DevOps Engineer (Internship) | Besant Technologies, Chennai, India</h3>
-    <p><i>August 2020 – March 2021</i></p>
-    <ul>
-      <li>Contributed to internal automation and build configuration management.</li>
-      <li>Tracked system logs with Prometheus, reducing downtime by 23%.</li>
-      <li>Assisted in performance optimization with Kubernetes, achieving 121% peak times scalability.</li>
-      <li>Proposed CloudFormation-based infrastructure, improving system reliability by 33%.</li>
-      <li>Monitored the health of EC2 instances and other AWS services, ensuring system standards compliance.</li>
-    </ul>
-
-    <h2>Education</h2>
-    <ul>
-      <li><b>MCA, Master of Computer Applications</b> – University of Madras – <i>Expected 2025</i></li>
-      <li><b>CS50x Computer Science</b> – Harvard University – <i>2024</i></li>
-      <li><b>Bachelor of Commerce</b> – Mohamed Sathak College of Arts and Science – <i>2017–2020 (CGPA: 7)</i></li>
-    </ul>
-
-    <h2>Events</h2>
-    <ul>
-      <li>AWS AI Conclave – Amazon AWS, January 2024</li>
-      <li>World’s Biggest Virtual Software Testing Conference – Testflix, September 2023</li>
-      <li>AWS Innovate Modern Applications Edition – Amazon, October 2023</li>
-      <li>GitHub CI/CD – GitHub, 2022</li>
-    </ul>
-
-    <h2>Projects / Open Source</h2>
-    <ul>
-      <li><b>Master Portfolio Website</b> – <a href="https://rewyekha.github.io/#/">Live</a> | <a href="https://github.com/rewyekha/Masterfolio.git">Source Code</a></li>
-      <li><b>DevOps Mastery on AWS</b> – Documentation | Gitbook | Blog</li>
-      <li><b>Cloud-Native Monitoring Application</b> – Public | Source Code</li>
-      <li><b>Full Stack - CI/CD DevOps</b> – Virtual Browser | Source Code</li>
-      <li><b>Java Application with Docker & Kubernetes</b> – Source Code</li>
-      <li><b>OTP Authentication</b> – Source Code</li>
-    </ul>
-
-    <h2>Certifications</h2>
-    <ul>
-      <li>Microsoft Certified Azure Administrator Associate (AZ-104)</li>
-      <li>AWS Certified - Well-Architected Proficient</li>
-      <li>GitHub Fundamentals - Administration</li>
-      <li>Continuous Integration with GitHub Actions</li>
-      <li>Web Development with HTML and CSS – Microsoft</li>
-      <li>HackerRank Certified SQL (Advanced)</li>
-      <li>Networking – Cisco Networking Academy</li>
-      <li>Python Essentials – Cisco Networking Academy</li>
-      <li>GitHub Actions CI/CD – LinkedIn Learning</li>
-      <li>Oracle - Databases for Developers: Foundations</li>
-      <li>HackerRank Certifications & Badges</li>
-      <li>Microsoft Badges</li>
-    </ul>
-
-    <h2>Contact</h2>
-    <ul>
-      <li><b>Email:</b> <a href="mailto:reyaskhan001@gmail.com">reyaskhan001@gmail.com</a></li>
-      <li><b>LinkedIn:</b> <a href="https://www.linkedin.com/in/reyas-khan-16640825b/">LinkedIn</a></li>
-      <li><b>GitHub:</b> <a href="https://github.com/rewyekha">github.com/rewyekha</a></li>
-      <li><b>Portfolio:</b> <a href="https://rewyekha.github.io/#/contact">Portfolio</a></li>
-    </ul>
-
-    <h2>Declaration</h2>
-    <p>I hereby declare that the information provided above is true and accurate to the best of my knowledge and belief.</p>
-    <p><b>Reyas Khan</b><br/>Chennai</p>
-  </div>
-
-  <!-- Background Effect -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.waves.min.js"></script>
   <script>
-    // Attach Vanta to body (stays behind everything)
-    const v = VANTA.WAVES({
-      el: "body",
+    VANTA.WAVES({
+      el: "#vanta-bg",
       mouseControls: true,
       touchControls: true,
-      // darken the wave color to reduce brightness
-      color: 0x0b1530,         // deep navy
-      shininess: 20,
-      waveHeight: 16,
-      waveSpeed: 0.85,
-      zoom: 0.9
-    });
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      color: 0x0d47a1,  
+      shininess: 30.00,
+      waveHeight: 20.00,
+      waveSpeed: 0.80,
+      zoom: 0.85
+    })
   </script>
-
-  <!-- Tilt Effect -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"></script>
-  <script>
-    VanillaTilt.init(document.querySelectorAll(".resume-card"), {
-      max: 10,
-      speed: 500,
-      glare: true,
-      "max-glare": 0.15,
-      perspective: 900
-    });
-  </script>
-
-   <footer>
-    © 2025 Reyas Khan | Built with ❤️ on GitHub Pages
-  </footer>
 </body>
 </html>
+
