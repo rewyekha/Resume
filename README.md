@@ -1,126 +1,125 @@
 # Reyas Khan M
-- **Location:** Chennai, Tamil Nadu, India – 600100  
-**Email:** [reyaskhan001@gmail.com](mailto:reyaskhan001@gmail.com)  
-**Portfolio:** [Portfolio](https://rewyekha.github.io/#/contact)  
+**Build and Release Engineer (DevOps)**
 
-## About Me
+- **Location:** Medavakkam, Chennai, TN
+- **Phone:** +91 9345654965
+- **Email:** [reyaskhan001@gmail.com](mailto:reyaskhan001@gmail.com)
+- **Website:** [https://reyaskhan.me](https://reyaskhan.me)
+- **LinkedIn:** [LinkedIn Profile](https://www.linkedin.com/in/reyas-khan-16640825b/)
+- **GitHub:** [GitHub Profile](https://github.com/rewyekha)
+- **Microsoft:** [Microsoft Profile](https://learn.microsoft.com/en-us/users/reyaskhan/)
+- **HackerRank:** [Hackerrank Profile](https://www.hackerrank.com/profile/reyaskhan001)
 
-I am a dedicated software engineer with a focus on DevOps, Cloud and Database. I enjoy tackling complex problems and continuously improving my skills. With experience in both research and DevOps, I am keen to contribute to innovative projects and further enhance my professional journey.
+---
+
+## Profile
+
+Build & Release Engineer with hands-on experience managing enterprise-scale CI/CD pipelines and build ERP workflows for 1,100+ projects. Skilled in Azure DevOps, containerization, and infrastructure automation. Passionate about delivering quality releases through process improvement and automation.
+
+---
+
+## Work Experience
+
+### Software Engineer | CI Global Technologies
+**Build & Release (Client – USA)** | *09/2025 – Present*
+
+- Maintained and optimized build workflows for 1,100+ installer projects, consistently achieving over 97% build success across VBScript, .NET (4.x, 6, 8), and C++ environments.
+- Supported 8 build types across dual infrastructure Azure VMs (Ephemeral runners) and on-premises Nutanix.
+- Packaged and delivered enterprise software installers using InstallShield, deploying build artifacts to client server portal ensuring version-controlled and audit-ready releases.
+- Managed release schedules aligned to sprint cycles, hotfix requests, and year-end code freeze policies.
+- Developed a Teams-based self-service system for provisioning Azure VMs with configurable resources and lifecycle, using Terraform, Ansible, and GitHub Actions in Azure DevTest Labs.
+
+**CI/CD Automation (Internal Projects)**
+
+- Designed and maintained CI/CD pipelines for Angular, .NET, Flutter, and AI chatbot applications, achieving <1% deployment failure rate.
+- Designed and automated CI/CD workflows for web, containerized, and Flutter-based cross-platform applications (MSIX, Android, iOS), including container build and deployment pipelines, FTP deployments to Plesk-managed servers, and multi-platform release distribution.
+- Implemented Cloudflare Tunnel to securely expose applications using existing domain infrastructure, eliminating the need for additional subdomain provisioning and direct server port exposure.
+- Integrated SonarQube and Trivy into pipelines to enforce automated code quality and security checks, achieving zero critical production vulnerabilities.
+- Automated and executed weekly database backup processes as part of sprint-based DevOps operations.
+
+### Associate Research (Operations) | Sutherland
+*03/2022 – 02/2025*
+
+- Automated scheduled S3 jobs and optimized workflows, ensuring 100% timely data transfer and compliance with AWS lambda functions.
+- Handled incident tickets and performed root cause analysis (RCA) to minimize recurring issues.
+- Collaborated with cross-functional teams to diagnose and resolve production issues in a timely manner.
+
+---
+
+## Internship
+
+### DevOps Engineer | Besant Technologies
+*07/2020 – 04/2021*
+
+- Automated end-to-end CI/CD pipelines using GitHub Actions and EC2, reducing deployment time by 90% across 12+ projects.
+
+---
+
+## Education and Training
+
+- **Master of Computer Applications (MCA)** | *2024 – 2025*
+  University of Madras | Institute Of Distance Education, Chennai
+  CGPA: Awaiting final results
+  Specialization in Advanced Computer Engineering – AI and ML
+
+- **Bachelor of Commerce (A/F)** | *2017 – 2020*
+  Mohamed Sathak College of Arts and Science – Chennai
+  CGPA: 7
+  Relevant coursework in CCNA, Linux, Cloud, DevOps and programming.
+
+---
 
 ## Skills
 
-- **Programming Languages/Databases:** C, C++, Python, Java, HTML, CSS, JavaScript, SQL
-- **Libraries and Frameworks:** Flask, ReactJS, Node.js
-- **Operating Systems:** Windows, Linux (UNIX, RHEL, Ubuntu, Debian)
-- **Cloud:** AWS, Microsoft Azure
-- **Technologies & Methodologies:** Networking, DevOps, ITIL, Git, GitHub, CI/CD, ServiceNow, Docker, Kubernetes, Apache Kafka, Jenkins, IaaS, SaaS, IaC
-- **Soft Skills:** Communication, Team Player, Time Management, Coding, Team Management, Attention to Detail
+| Category | Tools / Technologies |
+|---|---|
+| Cloud Platforms / On-Prem / AI | Microsoft Azure, Nutanix, AWS, AIOps, Claude, Gemini, AI Agents |
+| Release / Deployment | IIS, Plesk server, Cloudflared tunnel |
+| Packaging Tool (Installer) | InstallShield |
+| DevOps & Automation | CI/CD (Azure DevOps, GitHub Actions), PowerShell, Python |
+| Infrastructure as Code (IaC) | Terraform, Ansible |
+| Containerization & Orchestration | Docker, Kubernetes |
+| Operating System | Windows Server (2016, 2019), Red Hat Linux, Ubuntu |
+| Security & Code Quality | SonarQube, Trivy, VPC, IAM, Security Groups, API Auth & Tokens |
+| Monitoring & Logging | Prometheus, Grafana, Azure Monitoring, CloudWatch |
+| Networking | Load Balancing, DNS, VPC, IAM |
+| Database & Storage | SSMS, Azure SQL, MySQL WorkBench, S3, Storage account, Blob |
+| Artifactory | Azure DevOps – Artifact, Nexus |
 
-## Experience
+---
 
-### Associate Research | Sutherland Global Services, Chennai, India  
-*March 2022 – Present*
-- Developed intricate Hubble Sagan (SQL Server) queries for extracting product and customer engagement data.
-- Created and deployed technical content pages using XML for clients in the Multiple regions and languages.
-- Merging AI tools to support the publishing of technical support pages.
-- Wrote test cases, tracked bugs, and tested various backend tools of an e-commerce application.
-- Utilized client tools such as AWS, S3 buckets, SQL Server, SS portal, Oxygen XML Developer, Quip Tool, Claude 3, LLM server, and Amazon Docs.
-- Investigated and recommended automation solutions, reducing order full end time by 20%.
-- Identified training needs and provided coaching for new joiners.
-- Guided the development of an adaptive systems framework, increasing team efficiency by 25%.
-- Managed project risks by identifying, quantifying, and monitoring potential threats.
+## Global Certifications
 
-### DevOps Engineer (Internship) | Besant Technologies, Chennai, India  
-*August 2020 – March 2021*
-- Contributed to internal automation and build configuration management.
-- Tracked system logs with Prometheus, reducing downtime by 23%.
-- Assisted in performance optimization with Kubernetes, achieving 121% peak times scalability.
-- Proposed CloudFormation-based infrastructure, improving system reliability by 33%.
-- Monitored the health of EC2 instances and other AWS services, ensuring system standards compliance.
+- **Microsoft Certified:** Azure Administrator Associate (AZ-104) – 12/2022 to 12/2026
+- **Microsoft Learning Badge:** Designing and Implementing DevOps Solutions (AZ-400)
+- **GitHub Certified:** GitHub Foundations & Administration – 01/2025 to 01/2028
+- CS50x Computer Science – Harvard University (Online)
+- CS50 SQL – Harvard University (Online)
+- 100 Days of Azure, AWS, DevOps tools Challenge – By KodeKloud
+- Docker Certified Associate (DCA) – Course
+- Terraform Associate (003) – Course
+- Kubernetes and Cloud Native Associate (KCNA) – Course
 
-## Education
+---
 
-- **MCA, Master of Computer Applications**  
-  University of Madras – Chennai, TN, India  
-  *Expected: January 2024 – December 2025*
+## Awards & Achievements
 
-- **CS50x Computer Science**  
-  Harvard University – Cambridge, MA  
-  *June 2024 – Sep 2024*
+- Top Performer of the Week (x6) & Month (x4) at Sutherland.
+- Rising Star Award at Sutherland.
 
-- **Bachelor of Commerce**  
-  Mohamed Sathak College of Arts and Science – Chennai, TN, India  
-  *June 2017 – May 2020 | CGPA: 7*
+---
 
-## Events
+## Blogs
 
-- **AWS AI Conclave** – Amazon AWS, January 2024
-- **World’s Biggest Virtual Software Testing Conference** – Testflix, September 2023
-- **AWS Innovate Modern Applications Edition** – Amazon, October 2023
-- **GitHub CI/CD** – GitHub, 2022
+- DevOps Mastery on AWS – [Site Link](https://reyaskhan.me)
+- 3-Tier Application on Azure – [Site Link](https://reyaskhan.me)
+- Kode Kloud – DevOps Mastery Challenge Solutions – [Site Link](https://reyaskhan.me)
 
-## Projects / Open Source
-
-- **[Master Portfolio Website]** – [Live](https://rewyekha.github.io/#/) | [Source Code](https://github.com/rewyekha/Masterfolio.git)  
-  Tools: HTML, CSS, ReactJS, Node.js
-
-- **[DevOps Mastery on AWS]** – [Documentation] | [Gitbook] | [Blog]  
-  Tools: AWS, Jenkins, Maven, Docker, Ansible, Git
-
-- **[Cloud-Native Monitoring Application]** – [Public] | [Source Code]  
-  Tools: Python, Dockerfile, AWS, kubectl
-
-- **[Full Stack - CI/CD DevOps]** – [Virtual Browser] | [Source Code]  
-  Tools: Go, TypeScript, Vue, JavaScript, C, Dockerfile
-
-- **[Java Application with Docker & Kubernetes]** – [Source Code]  
-  Tools: Java, HTML, Scala, Shell, Dockerfile
-
-- **[OTP Authentication]** – [Source Code]  
-  Tools: Python, SMTP Protocol
-
-## Certifications
-
-- **Microsoft Certified Azure Administrator Associate (AZ-104)** – [Certificate]  
-  December 2022 - December 2024
-
-- **AWS Certified - Well-Architected Proficient** – [Certificate]  
-  
-- **GitHub Fundamentals - Administration** – [Certificate]  
-  
-- **Continuous Integration with GitHub Actions** – [Certificate]  
-  
-- **Web Development with HTML and CSS** – Microsoft – [Certificate]  
-  
-- **HackerRank Certified SQL (Advanced)** – [Certificate]  
-  
-- **Networking** – Cisco Networking Academy – [Certificate]  
-  
-- **Python Essentials** – Cisco Networking Academy – [Certificate]  
-  
-- **GitHub Actions CI/CD** – LinkedIn Learning – [Certificate]  
-  
-- **Oracle - Databases for Developers: Foundations** – [Profile]  
-  [Profile Link]
-
-- **HackerRank Certifications & Badges** – [Profile]  
-  [Profile Link]
-
-- **Microsoft Badges** – [Profile]  
-  [Profile Link]
+---
 
 ## Contact
-
-Feel free to connect with me through the following channels:
 
 - **Email:** [reyaskhan001@gmail.com](mailto:reyaskhan001@gmail.com)
 - **LinkedIn:** [LinkedIn](https://www.linkedin.com/in/reyas-khan-16640825b/)
 - **GitHub:** [github.com/rewyekha](https://github.com/rewyekha)
-- **Portfolio:** [Portfolio](https://rewyekha.github.io/#/contact)
-
-## Declaration
-
-I hereby declare that the information provided above is true and accurate to the best of my knowledge and belief.
-
-**Reyas Khan**  
-Chennai
+- **Website:** [reyaskhan.me](https://reyaskhan.me)
